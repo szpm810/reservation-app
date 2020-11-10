@@ -1,6 +1,6 @@
 import{ Injectable } from '@angular/core';
 import { from } from 'rxjs';
-import{ products } from 'src/app/products';
+import { products } from '../../products';
 
 @Injectable()
 export class ProductService{

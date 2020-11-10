@@ -1,15 +1,45 @@
+<link rel="shortcut icon" href="favicon.ico">
 <div class="container">
+      <div class="row">
+          <div *ngFor="let product of products" class="col-sm">
+                <a [routerLink]="['/datail]">
+                  <div class="card">
+                    <img src="{{ product.coverimage }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"> {{ product.name }} </p>
+                        <p>{{ product.description}}</p>
+                      </div>
+                </div>
+                </a>
+        </div>
+      </div>
+ </div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
     <br>
     <div class="row">
       <div *ngFor="let product of products; let productId = Index" class="col-sm">
             <a [routelink]="['productId']">
                  <div class="card">
-                      <img src="./assets\img\placeholder1.png" class="card-image-top" alt="...">
+                      <img src="./assets/img/placeholder1.png" class="card-image-top" alt="...">
                       <div class="card-body">
                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       </div>
                   </div>
             </a>
       </div>
-    </div>
-</div>
+    </div>-->
